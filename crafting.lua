@@ -1,10 +1,10 @@
 --crafting recipes
 minetest.register_craft({
-        output = "arabesque:sandstone_dessert_stone_star 2",
+        output = "arabesque:sandstone_desert_stone_star 4",
         recipe = {
-              {"", "", ""},
-              {"default:stone", "default:dessert_stone", ""},
-              {"", "", ""},
+              {"default:desert_stone", "", ""},
+              {"default:desert_stone","default:sandstone", "default:desert_stone"},
+              {"",  "default:desert_stone", ""},
         }
 })
 
@@ -14,5 +14,14 @@ minetest.register_craft({
                 {"", "", ""},
                 {"default:acacia_wood", "default:pine_wood", ""},
                 {"default:pine_wood", "default:acacia_wood", ""}
+        }
+})
+
+minetest.register_craft({
+        output = "arabesque.sandstone_desert_stone_knot 4"
+        recipe = {
+              {"default:desert_stone", "","default:desert_stone"},
+              {"default:desert_stone", "default:sandstone","default:desert_stone"},
+              {"default:desert_stone", "","default:desert_stone"}
         }
 })
