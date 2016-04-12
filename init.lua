@@ -54,4 +54,3 @@ end
 
 
 dofile(minetest.get_modpath("arabesque").."/crafting.lua")
-dofile(minetest.get_modpath("arabesque").."/lighting.lua")

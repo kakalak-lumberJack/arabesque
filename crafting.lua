@@ -18,10 +18,10 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-        output = "arabesque.sandstone_desert_stone_knot 4"
+        output = "arabesque.sandstone_desert_stone_knot 4",
         recipe = {
-              {"default:desert_stone", "","default:desert_stone"},
+              {"default:desert_stone", "", "default:desert_stone"},
               {"default:desert_stone", "default:sandstone","default:desert_stone"},
-              {"default:desert_stone", "","default:desert_stone"}
+              {"default:desert_stone", "", "default:desert_stone"}
         }
 })
