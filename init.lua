@@ -9,7 +9,7 @@ local stair_nodes = {
                 tiles = {"arabesque_sandstone_desert_stone_star.png"},
                 is_ground_content = false,
                 groups = {cracky = 2},
-                sounds = default.node_sound_stone_defaults(),
+                
         },
 
         ["acacia_pine_checker"] = {
