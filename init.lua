@@ -33,7 +33,7 @@ local stair_nodes = {
                 is_ground_content = false,
                 groups = {cracky = 2},
                 sounds = default.node_sound_stone_defaults(),
-        }
+        },
 
         ["floral_obsidian_glass"] = {
 		            description = "Floral Obsidian Glass",
@@ -44,7 +44,7 @@ local stair_nodes = {
 		            sunlight_propagates = true,
 		            groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		            sounds = default.node_sound_glass_defaults(),
-}
+
 for name, definition in pairs(stair_nodes) do
         minetest.register_node("arabesque:" .. name, definition)
 end
