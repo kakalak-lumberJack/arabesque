@@ -1,8 +1,15 @@
+local sound_wood = default.node_sound_wood_defaults()
+local sound_stone = default.node_sound_stone_defaults()
+local sound_glass = default.node_sound_glass_defaults()
+local sound_leaves = default.node_sound_leaves_defaults()
+
 local stair_nodes = {
         ["sandstone_desert_stone_star"] = {
                 description = "Sandstone Desert Stone Star",
                 tiles = {"arabesque_sandstone_desert_stone_star.png"},
-                groups = {cracky = 2}
+                is_ground_content = false,
+                groups = {cracky = 2},
+                sounds = default.node_sound_stone_defaults(),
         },
 
         ["acacia_pine_checker"] = {
@@ -16,16 +23,27 @@ local stair_nodes = {
                   "arabesque_acacia_pine_checker_front_back.png",
                 },
                 is_ground_content = false,
-                groups = {choppy = 3}
+                groups = {choppy = 3},
+                sounds = default.node_sound_wood_defaults(),
         },
+
         ["sandstone_desert_stone_knot"] = {
                 description = "Sandstone Desert Stone Knot",
                 tiles = {"arabesque_sandstone_desert_stone_knot.png"},
-                groups = {cracky =2}
+                is_ground_content = false
+                groups = {cracky = 2},
+                sounds = default.node_sound_stone_defaults(),
         }
-}
 
-
+        ["floral_obsidian_glass"] = {
+		            description = "Floral Obsidian Glass",
+		            drawtype = "glasslike_framed_optional",
+		            tiles = {"arabesque_floral_obsidian_glass.png"},
+		            paramtype = "light",
+                is_ground_content = false,
+		            sunlight_propagates = true,
+		            groups = {cracky = 3, oddly_breakable_by_hand = 3},
+		            sounds = default.node_sound_glass_defaults(),
 
 for name, definition in pairs(stair_nodes) do
         minetest.register_node("arabesque:" .. name, definition)
