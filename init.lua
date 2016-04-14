@@ -44,7 +44,8 @@ local stair_nodes = {
 		            sunlight_propagates = true,
 		            groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		            sounds = default.node_sound_glass_defaults(),
-
+        }
+        
 for name, definition in pairs(stair_nodes) do
         minetest.register_node("arabesque:" .. name, definition)
 end
