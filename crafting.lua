@@ -27,7 +27,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-        output = "arabesque:floral_obsidian_glass 9"
+        output = "arabesque:floral_obsidian_glass 9",
         recipe = {
               {"default:obsidian_shard", "default:obsidian_shard", "default:obsidian_shard"},
               {"default:obsidian_shard", "default:obsidian_glass", "default:obsidian_shard"},
