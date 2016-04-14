@@ -30,7 +30,7 @@ local stair_nodes = {
         ["sandstone_desert_stone_knot"] = {
                 description = "Sandstone Desert Stone Knot",
                 tiles = {"arabesque_sandstone_desert_stone_knot.png"},
-                is_ground_content = false
+                is_ground_content = false,
                 groups = {cracky = 2},
                 sounds = default.node_sound_stone_defaults(),
         }
