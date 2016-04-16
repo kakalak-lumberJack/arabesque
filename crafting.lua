@@ -1,6 +1,6 @@
 --crafting recipes
 minetest.register_craft({
-        output = "arabesque:lantern"
+        output = "arabesque:lantern",
         recipe = {
               {"dye:green", "default:iron_lump", "dye:blue"},
               {"default:glass", "default:torch", "default:glass"},
