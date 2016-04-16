@@ -3,13 +3,24 @@ local sound_stone = default.node_sound_stone_defaults()
 local sound_glass = default.node_sound_glass_defaults()
 local sound_leaves = default.node_sound_leaves_defaults()
 
+minetest.register_node("arabesque:lantern", {
+        description = "Lantern",
+        drawtype = "plantlike",
+        tiles = {"arabesque_lantern.png"},
+        paramtype = "light",
+        light_source = LIGHT_MAX-1,
+        is_ground_content = false,
+        groups = {snappy = 3, oddly_breakable_by_hand = 3},
+
+}),
+
 local stair_nodes = {
         ["sandstone_desert_stone_star"] = {
                 description = "Sandstone Desert Stone Star",
                 tiles = {"arabesque_sandstone_desert_stone_star.png"},
                 is_ground_content = false,
                 groups = {cracky = 2},
-                
+                sounds = default.node_sound_stone_defaults(),
         },
 
         ["acacia_pine_checker"] = {
