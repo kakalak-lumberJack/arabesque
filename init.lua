@@ -12,7 +12,7 @@ minetest.register_node("arabesque:lantern", {
         is_ground_content = false,
         groups = {snappy = 3, oddly_breakable_by_hand = 3},
 
-}),
+})
 
 local stair_nodes = {
         ["sandstone_desert_stone_star"] = {
