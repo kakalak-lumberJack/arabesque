@@ -1,12 +1,14 @@
 --crafting recipes
 minetest.register_craft({
-        output = "arabesque:lantern",
+        output = "arabesque:lantern 4",
         recipe = {
-              {"dye:green", "default:iron_lump", "dye:blue"},
+              {"", "default:iron_lump", ""},
               {"default:glass", "default:torch", "default:glass"},
               {"default:iron_lump", "default:iron_lump", "default:iron_lump"},
         }
 })
+
+--star pattern
 
 minetest.register_craft({
         output = "arabesque:sandstone_desert_stone_star 4",
@@ -16,6 +18,27 @@ minetest.register_craft({
               {"",  "default:desert_stone", ""},
         }
 })
+
+minetest.register_craft({
+        output = "arabesque:desert_stone_stone_star 4",
+        recipe = {
+              {"default:stone", "", ""},
+              {"default:stone","default:desert_stone", "default:stone"},
+              {"",  "default:stone", ""},
+        }
+})
+
+minetest.register_craft({
+        output = "arabesque:slate_brick_obsidian_star 4",
+        recipe = {
+              {"default:obsidian", "", ""},
+              {"default:obsidian","darkage:slate_brick", "default:obsidian"},
+              {"",  "default:obsidian", ""},
+        }
+})
+
+
+--other nodes
 
 minetest.register_craft({
         output = "arabesque:acacia_pine_checker 4",

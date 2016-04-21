@@ -15,9 +15,26 @@ minetest.register_node("arabesque:lantern", {
 })
 
 local stair_nodes = {
+
         ["sandstone_desert_stone_star"] = {
                 description = "Sandstone Desert Stone Star",
                 tiles = {"arabesque_sandstone_desert_stone_star.png"},
+                is_ground_content = false,
+                groups = {cracky = 2},
+                sounds = default.node_sound_stone_defaults(),
+        },
+
+        ["desert_stone_stone_star"] = {
+                description = "Desert Stone, Stone Star",
+                tiles = {"arabesque_desert_stone_stone_star.png"},
+                is_ground_content = false,
+                groups = {cracky = 2},
+                sounds = default.node_sound_stone_defaults(),      
+        },
+
+        ["slate_brick_obsidian_star"] = {
+                description = "Slate Brick Obsidian Star",
+                tiles = {"arabesque_slate_brick_obsidian_star.png"},
                 is_ground_content = false,
                 groups = {cracky = 2},
                 sounds = default.node_sound_stone_defaults(),
