@@ -48,7 +48,7 @@ minetest.register_craft({
         }
 })
 
-minetest.resiter_craft({
+minetest.register_craft({
         output = "arabesque:mosaic_center",
         recipe =  {
                 {"dye:red", "dye:orange","dye:yellow"},
