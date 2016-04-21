@@ -37,6 +37,25 @@ minetest.register_craft({
         }
 })
 
+--mosaic nodes
+
+minetest.register_craft({
+        output = "arabesque:mosaic 4",
+        recipe = {
+                {"dye:blue", "darkage:adobe", "dye:dark_green"},
+                {"darkage:adobe", "dye:white", "darkage:adobe"},
+                {"dye:red", "darkage:adobe", "dye:yellow"}
+        }
+})
+
+minetest.resiter_craft({
+        output = "arabesque:mosaic_center",
+        recipe =  {
+                {"dye:red", "dye:orange","dye:yellow"},
+                {"", "darkage:adobe", ""},
+                {"dye:dark_green", "dye:blue", "dye:white"}
+        }
+})
 
 --other nodes
 

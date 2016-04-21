@@ -25,11 +25,11 @@ local stair_nodes = {
         },
 
         ["desert_stone_stone_star"] = {
-                description = "Desert Stone, Stone Star",
+                description = "Desert Stone Stone Star",
                 tiles = {"arabesque_desert_stone_stone_star.png"},
                 is_ground_content = false,
                 groups = {cracky = 2},
-                sounds = default.node_sound_stone_defaults(),      
+                sounds = default.node_sound_stone_defaults(),
         },
 
         ["slate_brick_obsidian_star"] = {
@@ -39,6 +39,22 @@ local stair_nodes = {
                 groups = {cracky = 2},
                 sounds = default.node_sound_stone_defaults(),
         },
+
+        ["mosaic"] = {
+                description = "tile mosaic",
+                tiles = {"arabesque_mosaic.png"},
+                is_ground_content = false,
+                groups = {cracky = 3},
+                sounds = default.node_sound_stone_defaults(),
+        }
+
+        ["mosaic_center"] = {
+                description = "tile mosaic center",
+                tiles = {"arabesque_mosaic_center.png"},
+                is_ground_content = false,
+                groups = {cracky = 3},
+                sounds = default.node_sound_stone_defaults(),
+        }
 
         ["acacia_pine_checker"] = {
                 description = "acacia pine checkered floor",
