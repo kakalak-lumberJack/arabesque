@@ -46,7 +46,7 @@ local stair_nodes = {
                 is_ground_content = false,
                 groups = {cracky = 3},
                 sounds = default.node_sound_stone_defaults(),
-        }
+        },
 
         ["mosaic_center"] = {
                 description = "tile mosaic center",
@@ -54,7 +54,7 @@ local stair_nodes = {
                 is_ground_content = false,
                 groups = {cracky = 3},
                 sounds = default.node_sound_stone_defaults(),
-        }
+        },
 
         ["acacia_pine_checker"] = {
                 description = "acacia pine checkered floor",
@@ -90,6 +90,7 @@ local stair_nodes = {
 		            sounds = default.node_sound_glass_defaults(),
         }
 }
+
 for name, definition in pairs(stair_nodes) do
         minetest.register_node("arabesque:" .. name, definition)
 end
