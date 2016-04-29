@@ -11,6 +11,7 @@ minetest.register_node("arabesque:lantern", {
         light_source = LIGHT_MAX-1,
         is_ground_content = false,
         groups = {snappy = 3, oddly_breakable_by_hand = 3},
+})
 
 minetest.register_node("arabesque:desert_stone_knot", {
         description = "Desert Stone Knot Pattern",
@@ -20,7 +21,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
         },
         inventory_image = "arabesque_desert_stone_knot.png",
         wield_image = "arabesque_desert_stone_knot.png",
-        
+
 })
 
 local stair_nodes = {
