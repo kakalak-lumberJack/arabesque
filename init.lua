@@ -23,7 +23,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
               "arabesque_desert_stone_knot.png",
               texture_path,
               texture_path
-        }
+        },
         paramtype2 = "facedir",
         node_box = {
                 type = "fixed",
