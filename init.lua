@@ -15,6 +15,7 @@ minetest.register_node("arabesque:lantern", {
 
 minetest.register_node("arabesque:desert_stone_knot", {
         description = "Desert Stone Knot Pattern",
+        drawtype = "nodebox",
         tiles = {
               texture_path,
               texture_path,
@@ -23,8 +24,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
               texture_path,
               texture_path
         }
-        paramtype2 = "faceir",
-        drawtype = "nodebox",
+        paramtype2 = "facedir",
         node_box = {
                 type = "fixed",
                 fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
