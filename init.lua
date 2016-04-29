@@ -15,13 +15,45 @@ minetest.register_node("arabesque:lantern", {
 
 minetest.register_node("arabesque:desert_stone_knot", {
         description = "Desert Stone Knot Pattern",
-        drawtype= "torchlike",
-        tiles={
-              {"arabesque_desert_stone_knot.png"}
+        paramtype2 = "faceir",
+        drawtype= "nodebox",
+        node_box = {
+                type = "fixed",
+                fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
+                }
         },
-        inventory_image = "arabesque_desert_stone_knot.png",
-        wield_image = "arabesque_desert_stone_knot.png",
+        on_place = minetest.rotate_node,
+        groups = {cracky =2}
+        if is_corner == nil then
+                tiles = {
+                texture_path,
+                texture_path,
+                "arabesque_desert_stone_knot.png",
+                "arabesque_desert_stone_knot.png",
+                texture_path,
+                texture_path
+                }
+        elseif is_corner == 1 then
+                tiles = {
+                texture_path,
+                texture_path,
+                texture_path,
+                "arabesque_desert_stone_knot.png",
+                "arabesque_desert_stone_knot.png",
+                texture_path
+                }
+        else
+                tiles = {
+                texture_path,
+                texture_path,
+                "arabesque_desert_stone_knot.png",
+                texture_path,
+                "arabesque_desert_stone_knot.png",
+                texture_path
+                }
+        }
 
+      
 })
 
 local stair_nodes = {
