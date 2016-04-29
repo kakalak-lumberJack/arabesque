@@ -17,12 +17,13 @@ minetest.register_node("arabesque:desert_stone_knot", {
         description = "Desert Stone Knot Pattern",
         drawtype = "nodebox",
         tiles = {
-              "",
-              "",
-              "",
-              "",
+              texture_path,
+              texture_path,
               "arabesque_desert_stone_knot.png",
-              ""
+              "arabesque_desert_stone_knot.png",
+              texture_path,
+              texture_path,
+
         },
         paramtype = "light",
         paramtype2 = "facedir",
