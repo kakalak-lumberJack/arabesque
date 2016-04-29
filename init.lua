@@ -20,7 +20,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
         },
         inventory_image = "arabesque_desert_stone_knot.png",
         wield_image = "arabesque_desert_stone_knot.png",
-        }
+        
 })
 
 local stair_nodes = {
