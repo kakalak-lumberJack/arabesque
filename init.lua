@@ -16,12 +16,11 @@ minetest.register_node("arabesque:lantern", {
 minetest.register_node("arabesque:desert_stone_knot", {
         description = "Desert Stone Knot Pattern",
         paramtype2 = "faceir",
-        drawtype= "nodebox",
+        drawtype = "nodebox",
         node_box = {
                 type = "fixed",
                 fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
-                }
-        },
+                },
         on_place = minetest.rotate_node,
         groups = {cracky =2}
         if is_corner == nil then
@@ -53,7 +52,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
                 }
         }
 
-      
+
 })
 
 local stair_nodes = {
