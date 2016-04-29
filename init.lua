@@ -22,7 +22,7 @@ minetest.register_node("arabesque:desert_stone_knot", {
                 fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
                 },
         on_place = minetest.rotate_node,
-        groups = {cracky =2}
+        groups = {cracky =2},
         if is_corner == nil then
                 tiles = {
                 texture_path,
