@@ -15,18 +15,18 @@ minetest.register_node("arabesque:lantern", {
 
 
 
-local engraved =
+local engraved = {
 
       ["desert_stone_knot"] = {
               description = "Desert Stone Knot Pattern",
-
               tiles = {
               "arabesque_desert_stone_knot.png",
               },
-      }
+      },
+}
 
 for name, definition in pairs(engraved) do
-        minetest.register_node("arabesque:" .. name, defintion {
+        minetest.register_node("arabesque:" .. name, definition {
               drawtype = "nodebox",
               paramtype = "light",
               paramtype2 = "facedir",
