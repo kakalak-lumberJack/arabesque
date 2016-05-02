@@ -17,7 +17,7 @@ minetest.register_node("arabesque:lantern", {
 
 local engraved = {
 
-      panel_like = [drawtype = "nodebox",
+      panel_like = {drawtype = "nodebox",
       paramtype = "light",
       paramtype2 = "facedir",
       node_box = {
@@ -27,7 +27,7 @@ local engraved = {
       on_place = minetest.rotate_node,
               groups = {cracky = 2}]
 
-      }
+      },
 
       ["desert_stone_knot"] = {
               description = "Desert Stone Knot Pattern",
