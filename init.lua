@@ -25,9 +25,9 @@ local engraved = {
               fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
               },
       on_place = minetest.rotate_node,
-              groups = {cracky = 2}]
+              groups = {cracky = 2}
 
-      },
+      }
 
       ["desert_stone_knot"] = {
               description = "Desert Stone Knot Pattern",
