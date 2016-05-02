@@ -14,28 +14,34 @@ minetest.register_node("arabesque:lantern", {
 })
 
 
-local engraved = {
 
 
-      ["desert_stone_knot"] = {
+      local node_type = {
+            drawtype = "nodebox",
+            paramtype = "light",
+            paramtype2 = "facedir",
+            node_box = {
+                    type = "fixed",
+                    fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
+                    },
+            on_place = minetest.rotate_node,
+            groups = {cracky = 2}
+            sounds = default.node_sound_stone_defaults(),
+            }
+
+        local engraved = {
+
+
+            ["desert_stone_knot"] = {
               description = "Desert Stone Knot Pattern",
               tiles = {
               "arabesque_desert_stone_knot.png",
               },
-              drawtype = "nodebox",
-              paramtype = "light",
-              paramtype2 = "facedir",
-              node_box = {
-                      type = "fixed",
-                      fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
-                      },
-              on_place = minetest.rotate_node,
-              groups = {cracky = 2}
-      },
+
 }
 
 for name, definition in pairs(engraved) do
-        minetest.register_node("arabesque:" .. name, definition)
+        minetest.register_node("arabesque:" .. name, node_type)
 end
 
 
