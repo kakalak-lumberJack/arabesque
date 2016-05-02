@@ -13,22 +13,45 @@ minetest.register_node("arabesque:lantern", {
         groups = {snappy = 3, oddly_breakable_by_hand = 3},
 })
 
-minetest.register_node("arabesque:desert_stone_knot", {
-        description = "Desert Stone Knot Pattern",
-        drawtype = "nodebox",
-        tiles = {
-              "arabesque_desert_stone_knot.png",
-        },
-        paramtype = "light",
-        paramtype2 = "facedir",
-        node_box = {
-                type = "fixed",
-                fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
-                },
-        on_place = minetest.rotate_node,
-        groups = {cracky = 2}
-})
 
+
+local engraved =
+
+      ["desert_stone_knot"] = {
+              description = "Desert Stone Knot Pattern",
+
+              tiles = {
+              "arabesque_desert_stone_knot.png",
+              },
+      }
+
+for name, definition in pairs(engraved) do
+        minetest.register_node("arabesque:" .. name, defintion {
+              drawtype = "nodebox",
+              paramtype = "light",
+              paramtype2 = "facedir",
+              node_box = {
+                    type = "fixed",
+                    fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
+                    },
+              on_place = minetest.rotate_node,
+              groups = {cracky = 2}
+          })
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+--stairs_plus compatible blocks
 local stair_nodes = {
 
         ["sandstone_desert_stone_star"] = {
