@@ -11,7 +11,7 @@ minetest.register_node("arabesque:lantern", {
         light_source = LIGHT_MAX-1,
         is_ground_content = false,
         groups = {snappy = 3, oddly_breakable_by_hand = 3},
-})
+}),
 
 
 
@@ -26,9 +26,9 @@ minetest.register_node("arabesque:lantern", {
                     },
             on_place = minetest.rotate_node,
             groups = {cracky = 2}
-            sounds = default.node_sound_stone_defaults(),
-            }
-
+            sounds = default.node_sound_stone_defaults()
+            },
+        end
         local engraved = {
 
 
