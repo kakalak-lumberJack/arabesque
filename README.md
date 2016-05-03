@@ -5,7 +5,7 @@ In development (more nodes to come!)--this is my first mod so any constructive c
 
 #Depends 
 
-This app depends on default and moreblocks.  
+This app depends on default and moreblocks for stairsplus compatibility.  
 
 #Credits:
 
