@@ -31,8 +31,8 @@ arabesque:register_engraving = function(node_name, engraved_description, engrave
             sounds = default.node_sound_stone_defaults(),
             }
 
-
-        minetest.register_node (arabesque:" .. node_name, engraved description)
+            do
+        minetest.register_node (arabesque:" .. node_name, node_type)
 
 end
 
