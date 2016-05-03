@@ -19,11 +19,11 @@ function arabesque.register_engraving(engraved_name, engraved_texture)
               on_place = minetest.rotate_node,
               groups = {cracky = 2},
               sounds = default.node_sound_stone_defaults(),
-              })
+      })
 end
 
 
-arabesque.register_engraving(engraved_name, engraved_texture)
+function arabesque.register_engraving(engraved_name, engraved_texture)
 
 end
 
