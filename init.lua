@@ -14,8 +14,8 @@ minetest.register_node("arabesque:lantern", {
 })
 
 function arabesque:register_engraving(node_name,  engraved_texture)
-      minetest.register_node("arabesque:" .. node_name
-              description = node_name .. "engraved pattern"
+      minetest.register_node("arabesque:" .. node_name {
+              description = node_name .. "engraved pattern",
               drawtype = "nodebox",
               tiles = {engraved_texture},
               paramtype = "light",
