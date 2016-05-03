@@ -3,15 +3,9 @@ local sound_stone = default.node_sound_stone_defaults()
 local sound_glass = default.node_sound_glass_defaults()
 local sound_leaves = default.node_sound_leaves_defaults()
 
-minetest.register_node("arabesque:lantern", {
-        description = "Lantern",
-        drawtype = "plantlike",
-        tiles = {"arabesque_lantern.png"},
-        paramtype = "light",
-        light_source = LIGHT_MAX-1,
-        is_ground_content = false,
-        groups = {snappy = 3, oddly_breakable_by_hand = 3},
-})
+
+
+local arabesque = {}
 
 function arabesque:register_engraving(node_name, engraved_texture)
       minetest.register_node("arabesque:" .. node_name {
@@ -34,7 +28,17 @@ end
 
 arabesque.register_engraving("desert_stone_knot", arabesque_desert_stone_knot.png)
 
+--misc nodes, objects
 
+minetest.register_node("arabesque:lantern", {
+        description = "Lantern",
+        drawtype = "plantlike",
+        tiles = {"arabesque_lantern.png"},
+        paramtype = "light",
+        light_source = LIGHT_MAX-1,
+        is_ground_content = false,
+        groups = {snappy = 3, oddly_breakable_by_hand = 3},
+})
 
 
 
