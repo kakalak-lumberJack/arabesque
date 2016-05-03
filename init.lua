@@ -29,4 +29,4 @@ end
 
 --register engraving nodes
 
-arabesque.register_engraving("desert_stone_knot", "arabesque_" .. engraved_name .. ".png")
+arabesque.register_engraving("desert_stone_knot", "arabesque_desert_stone_knot.png")
