@@ -3,7 +3,7 @@ local sound_stone = default.node_sound_stone_defaults()
 local sound_glass = default.node_sound_glass_defaults()
 local sound_leaves = default.node_sound_leaves_defaults()
 
-
+arabesque = {}
 
 function arabesque.register_engraving(engraved_name, engraved_description, engraved_texture)
       minetest.register_node("arabesque:" .. engraved_name, {
