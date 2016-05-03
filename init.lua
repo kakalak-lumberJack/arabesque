@@ -27,8 +27,8 @@ arabesque:register_engraving = function(node_name, engraved_description, engrave
                     fixed = {-0.5, -0.5, -0.5, 0.5, -0.44, 0.5}
                     },
             on_place = minetest.rotate_node,
-            groups = {cracky = 2}
-            sounds = default.node_sound_stone_defaults()
+            groups = {cracky = 2},
+            sounds = default.node_sound_stone_defaults(),
             }
 
 
