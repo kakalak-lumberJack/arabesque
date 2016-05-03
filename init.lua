@@ -4,10 +4,8 @@ local sound_glass = default.node_sound_glass_defaults()
 local sound_leaves = default.node_sound_leaves_defaults()
 
 
-
 local arabesque = {}
-
-function arabesque:register_engraving(node_name, engraved_texture)
+function arabesque.register_engraving(node_name, engraved_texture)
       minetest.register_node("arabesque:" .. node_name {
               description = node_name .. "engraved pattern",
               drawtype = "nodebox",
@@ -24,6 +22,10 @@ function arabesque:register_engraving(node_name, engraved_texture)
               })
 end
 
+
+arabesque.register_engraving(node_name, engraved_texture)
+
+end
 --register engraving nodes
 
 arabesque.register_engraving("desert_stone_knot", "arabesque_" .. node_name .. ".png")
