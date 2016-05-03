@@ -13,7 +13,7 @@ minetest.register_node("arabesque:lantern", {
         groups = {snappy = 3, oddly_breakable_by_hand = 3},
 })
 
-function arabesque:register_engraving(node_name,  engraved_texture)
+function arabesque:register_engraving(node_name, engraved_texture)
       minetest.register_node("arabesque:" .. node_name {
               description = node_name .. "engraved pattern",
               drawtype = "nodebox",
@@ -32,7 +32,7 @@ end
 
 --register engraving nodes
 
-arabesque.register_engraving("desert_stone_knot", "Desert Stone Knot Pattern", arabesque_desert_stone_knot.png)
+arabesque.register_engraving("desert_stone_knot", arabesque_desert_stone_knot.png)
 
 
 
