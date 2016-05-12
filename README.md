@@ -5,7 +5,9 @@ In development (more nodes to come!)--this is my first mod so any constructive c
 
 #Depends 
 
-This app depends on default and moreblocks for stairsplus compatibility.  
+This app depends on default and moreblocks for stairsplus compatibility. Currently crafts are still being written, so this mod should only be deployed on creative mode.
+
+Also, glass-type nodes will not look as inteneded if connected glass is selected in setting
 
 #Credits:
 
