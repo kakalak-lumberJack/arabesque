@@ -1,17 +1,50 @@
 # arabesque
 Minetest mod adding decorative nodes inspired by Arabic and Islamic archictecture and art
 
-In development (more nodes to come!)--this is my first mod so any constructive criticism is welcomed.
 
 #Depends 
 
-This app depends on default and moreblocks for stairsplus compatibility. Currently crafts are still being written, so this mod should only be deployed on creative mode.
+This app depends on default and moreblocks. 
 
 Also, glass-type nodes will not look as inteneded if connected glass is selected in setting
 
-#Credits:
+#Licenseing
 
-Thanks to all minetest developers, and those who created the textures of default blocks which this mod borrows from.
-Special thanks to foot-on-teh-hill for encouragement and support.
-Thanks to GaboXandre and staff as well as regular players on Gabo's Server for support also.
-Thanks to rubenwardy for Minetest Modding book which provides and excellent introduction to modding.
+License for Code
+----------------
+
+Copyright (C) 2016 kakalak-lumberJack Jack Manning <kaklak-lumberjack@gmail.com>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation; either version 2.1 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+License for Textures, Models and Sounds
+---------------------------------------
+
+CC-BY-SA 3.0 UNPORTED. Created by Kakalak-lumberJack except as noted below:
+
+#Credits:
+textures from, engraving nodes, obsidian floral glass, and acacia pine checkered floor are modified from:
+
+default_stone.png Cisoun's WTFPL
+default_desert_stone.png V--anessaE (WTFPL)
+default_obsidian.png --jojoa1997 (WTFPL)
+default_obsidian_glass.png --PilzAdam (WTFPL)
+default_acacia_wood.png, default_pine_wood.png --paramat (CC BY-SA 3.0)
+
+chisel is modified from
+screwdriver.png Gambit (WTFPL)
+
+Mito551 (sounds) (CC BY-SA)
+
