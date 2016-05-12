@@ -35,6 +35,8 @@ License for Textures, Models and Sounds
 CC-BY-SA 3.0 UNPORTED. Created by Kakalak-lumberJack except as noted below:
 
 #Credits:
+stairs.lua and engraving.lua greatly assisted by code from foot-on-teh-hill's scifipack (WTFPL) and moreblocks stairs_plus Calinou (zlib).
+
 textures from, engraving nodes, obsidian floral glass, and acacia pine checkered floor are modified from:
 
 default_stone.png Cisoun's WTFPL
