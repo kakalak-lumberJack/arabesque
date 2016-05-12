@@ -8,7 +8,7 @@ This app depends on default and moreblocks.
 
 Also, glass-type nodes will not look as inteneded if connected glass is selected in setting
 
-#Licenseing
+#License
 
 License for Code
 ----------------
