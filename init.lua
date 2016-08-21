@@ -52,3 +52,4 @@ minetest.register_craft({
 
 dofile(minetest.get_modpath("arabesque").."/stairs.lua")
 dofile(minetest.get_modpath("arabesque").."/engraving.lua")
+dofile(minetest.get_modpath("arabesque").."/mapgen.lua")

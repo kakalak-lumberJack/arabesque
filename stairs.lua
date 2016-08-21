@@ -43,7 +43,41 @@ local stair_nodes = {
 		            sunlight_propagates = true,
 		            groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		            sounds = default.node_sound_glass_defaults(),
-        }
+        },
+
+        ["turquoise_tile"] = {
+                description = "Turquoise Tile",
+                tiles = {"arabesque_turquoise_tile.png"},
+                is_ground_content = false,
+                groups = {cracky = 3},
+                sounds = default.node_sound_stone_defaults(),
+        },
+
+        ["turquoise_block"] = {
+                description = "Turquoise Block",
+                tiles = {"arabesque_turquoise_block.png"},
+                is_ground_content = true,
+                groups = {cracky =3},
+                sounds = default.node_sound_stone_defaults(),
+        },
+
+        ["lapis_lazuli_block"] = {
+                description = "Lapis Lazuli Block",
+                tiles = {"arabesque_lapis_lazuli_block.png"},
+                is_ground_content = true,
+                groups = {cracky =3},
+                sounds = default.node_sound_stone_defaults(),
+        },
+
+        ["lapis_lazuli_tile"] = {
+                description = "Lapis Lazuli Tile",
+                tiles = {"arabesque_lapis_lazuli_tile.png"},
+                is_ground_content = false,
+                groups = {cracky =3},
+                sounds = default.node_sound_stone_defaults(),
+        },
+
+
 }
 ---stairs plus support
 for name, definition in pairs(stair_nodes) do
@@ -114,5 +148,23 @@ minetest.register_craft({
               {"default:obsidian_shard", "default:obsidian_shard", "default:obsidian_shard"},
               {"default:obsidian_shard", "default:obsidian_glass", "default:obsidian_shard"},
               {"default:obsidian_shard", "default:obsidian_shard", "default:obsidian_shard"}
+        }
+})
+
+minetest.register_craft({
+        output = "arabesque:turquoise_tile 9",
+        recipe ={
+            {"arabesque:turquoise_block", "arabesque:turquoise_block", "arabesque:turquoise_block"},
+            {"arabesque:turquoise_block", "arabesque:turquoise_block", "arabesque:turquoise_block"},
+            {"arabesque:turquoise_block", "arabesque:turquoise_block", "arabesque:turquoise_block"}
+        }
+})
+
+minetest.register_craft({
+        output = "arabesque:lapis_lazuli_tile 9",
+        recipe ={
+            {"arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block"},
+            {"arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block"},
+            {"arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block", "arabesque:lapis_lazuli_block"}
         }
 })
