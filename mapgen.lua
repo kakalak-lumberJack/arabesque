@@ -3,7 +3,7 @@ minetest.register_ore ({
       ore = "arabesque:turquoise_block",
       wherein = "default:stone",
       height_min = -31000,
-      height_max = 20,
+      height_max = 5,
       noise_threshold = 0.5,
       noise_params = {
               offset = 0,
@@ -23,7 +23,7 @@ minetest.register_ore ({
       ore = "arabesque:lapis_lazuli_block",
       wherein = "default:stone",
       height_min = -31000,
-      height_max = 20,
+      height_max = 0,
       noise_threshold = 0.5,
       noise_params = {
               offset = 0,
